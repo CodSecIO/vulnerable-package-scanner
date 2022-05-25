@@ -1,0 +1,9 @@
+---
+rules:
+- id: codsec.security.python.generic.ctx
+  languages:
+  - generic
+  message: Usage of an insecure packaged identified
+  severity: ERROR
+  patterns:
+  - pattern: ctx

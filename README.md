@@ -2,5 +2,5 @@
 # How to use
 ```bash
 $ docker build -t codsec/vps .
-$ docker run --rm codsec/vps <git-url>
+$ docker run --rm -it codsec/vps <git-url>
 ```
