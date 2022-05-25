@@ -1,6 +1,6 @@
 ---
 rules:
-- id: codsec.security.python.generic.ctx
+- id: codsec.security.generic.ctx
   languages:
   - generic
   message: Usage of an insecure packaged identified
