@@ -7,3 +7,12 @@ rules:
   severity: ERROR
   patterns:
   - pattern: import ctx
+
+- id: codsec.security.python.tarfile
+  languages:
+  - python
+  message: Usage of tarfile module's extract() or extractall() functions that have a directory traversal vulnerability
+  severity: ERROR
+  patterns:
+  - pattern-regex: .*(?'var'.*[^ ])\s*=\s*tarfile\.open[\s\S]*(\g{var}(\.extract|\.extractall)\(.*\))
+  - focus-metavariable: $2
